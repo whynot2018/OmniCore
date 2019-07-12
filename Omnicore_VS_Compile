@@ -21,11 +21,10 @@ The example below has been compiled and tried by several people using Android AP
 
 Once you have successfully transferred OmniCore and AAPS apks outlined in previous steps, please use the following sequence to verify correct installation of both components:
 
-1.  If currently using omnipy or other AAPS change settings on AAPS first to  Open Loop and Virtual Pump
-
-2.  export AAPS settings and transfer to PC.
+1. If currently using omnipy or other AAPS change settings on AAPS first to  Open Loop and Virtual Pump
+2. export AAPS settings and transfer to PC.
 3. uninstall currently installed AAPS
 4. Install OmniCore 1st
 5. then install AAPS, with import settings during the wizard.
-6.  it will ask you to reboot application.
+6. it will ask you to reboot application.
 7. enjoy!
