@@ -1,0 +1,31 @@
+These instructions are to compile development branch of OmniCore Android application on Windows Visual Studio (instructions have been tested and authored using Visual Studio Community Edition as an example, other version should work with slight variations).
+
+The example below has been compiled and tried by several people using Android API 28 (Android 9.0 - Pie)
+
+•    Download Visual Studio community 2019
+•    Run it and select to install 'Mobile Development with .NET' workload - this is the only workload required
+•    Select to open from github https://github.com/winemug/OmniCore/
+•    Tools/Android/SDK Manager – under Android 9.0 select 'Android SDK Platform 28' – apply changes – wait for that to install
+•    Update platform tools to 28.0.2 and Build tools to 28.0.3
+•    Under Solution Explorer tab on bottom right - double click OmniCore.sln
+•    CTRL+ b to build
+•    After successful compilation, right-click Solution OmniCore.sln and select Archive All
+•    Archive Manager will open - click on Distribute button and select Ad hoc
+•    Created Android keystore: set alias, password, name
+•    Select certificate, then save as to save signed apk to desired folder
+•    Transfer apk to phone and install Omnicore on phone, run it.
+•    Separately, fire up Android Studio, and change to omnicore_dev branch of https://github.com/winemug/AndroidAPS/
+•    Build AAPS omnicore_dev branch to APK (following standard AAPS instructions except using winemug AAPS dev branch as in previous step)
+•    Save settings in your current (omnipy) AAPS
+•    Transfer AAPS (for omnicore) APK to phone and install
+
+Once you have successfully transferred OmniCore and AAPS apks outlined in previous steps, please use the following sequence to verify correct installation of both components:
+
+1.  If currently using omnipy or other AAPS change settings on AAPS first to  Open Loop and Virtual Pump
+
+2.  export AAPS settings and transfer to PC.
+3. uninstall currently installed AAPS
+4. Install OmniCore 1st
+5. then install AAPS, with import settings during the wizard.
+6.  it will ask you to reboot application.
+7. enjoy!
